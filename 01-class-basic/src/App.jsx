@@ -9,9 +9,20 @@ function App() {
 	const monthName = date.getMonth();
 	const currentYear = date.getFullYear();
 
+	// const headingStyle = {
+	// 	backgroundColor: "purple",
+	// 	color: "white",
+	// 	fontSize: "3rem",
+	// 	textAlign: "center",
+	// 	padding: "15px",
+	// };
+
 	return (
 		<>
-			<h1> Todo App </h1>
+			<h1 className="headingStyle largeText" /**style={headingStyle} */>
+				{" "}
+				Todo App{" "}
+			</h1>
 			<h3> {todoTitle} </h3>
 			<p> {todoDescription} </p>
 			<p> {dateName + "/" + monthName + "/" + currentYear} </p>
