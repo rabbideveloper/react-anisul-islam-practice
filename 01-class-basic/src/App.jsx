@@ -23,9 +23,14 @@ function App() {
 				{" "}
 				Todo App{" "}
 			</h1>
-			<h3> {todoTitle} </h3>
-			<p> {todoDescription} </p>
-			<p> {dateName + "/" + monthName + "/" + currentYear} </p>
+			<div className="card">
+				<h3 className="cardTitle"> {todoTitle} </h3>
+				<p className="cardDesc"> {todoDescription} </p>
+				<p className="cardFooter">
+					{" "}
+					{dateName + "/" + monthName + "/" + currentYear}{" "}
+				</p>
+			</div>
 		</>
 	);
 }
