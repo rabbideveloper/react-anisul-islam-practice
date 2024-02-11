@@ -14,7 +14,7 @@ const currentYear = date.getFullYear();
 function Card({ titleText, titleDesc }) {
 	// const { titleText, titleDesc } = props; // object destructing
 	return (
-		<div>
+		<>
 			<div className="card">
 				<h3 className="cardTitle"> {titleText} </h3>
 				<p className="cardDesc"> {titleDesc} </p>
@@ -23,7 +23,7 @@ function Card({ titleText, titleDesc }) {
 					{dateName + "/" + monthName + "/" + currentYear}{" "}
 				</p>
 			</div>
-		</div>
+		</>
 	);
 }
 
