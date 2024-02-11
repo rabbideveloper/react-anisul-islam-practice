@@ -1,6 +1,3 @@
-const todoTitle = "Call Family";
-const todoDescription =
-	"Lorem, ipsum dolor sit amet consectetur adipisicing elit Debitis, beatae.";
 const date = new Date();
 const dateName = date.getDate();
 const monthName = date.getMonth();
@@ -14,12 +11,13 @@ const currentYear = date.getFullYear();
 // 	padding: "15px",
 // };
 
-function Card() {
+function Card({ titleText, titleDesc }) {
+	// const { titleText, titleDesc } = props; // object destructing
 	return (
 		<div>
 			<div className="card">
-				<h3 className="cardTitle"> {todoTitle} </h3>
-				<p className="cardDesc"> {todoDescription} </p>
+				<h3 className="cardTitle"> {titleText} </h3>
+				<p className="cardDesc"> {titleDesc} </p>
 				<p className="cardFooter">
 					{" "}
 					{dateName + "/" + monthName + "/" + currentYear}{" "}

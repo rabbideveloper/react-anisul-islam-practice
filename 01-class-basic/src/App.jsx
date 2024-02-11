@@ -8,9 +8,18 @@ function App() {
 				{" "}
 				Todo App{" "}
 			</h1>
-			<Card />
-			<Card />
-			<Card />
+			<Card
+				titleText="Call Father"
+				titleDesc="Lorem, ipsum dolor sit amet consectetur adipisicing elit Debitis, beatae."
+			/>
+			<Card
+				titleText="Call Mother"
+				titleDesc="Lorem, ipsum dolor sit amet consectetur adipisicing elit Debitis, beatae."
+			/>
+			<Card
+				titleText="Call Sister"
+				titleDesc="Lorem, ipsum dolor sit amet consectetur adipisicing elit Debitis, beatae."
+			/>
 		</>
 	);
 }
